@@ -1,8 +1,6 @@
 
-using Microsoft.AspNetCore.Http.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi;
-using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
 
 namespace CryptoPredictorWebApi
