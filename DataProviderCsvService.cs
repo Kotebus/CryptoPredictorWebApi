@@ -1,4 +1,6 @@
-﻿namespace CryptoPredictorWebApi
+﻿using System.Globalization;
+
+namespace CryptoPredictorWebApi
 {
     public class DataProviderCsvService: IDataProviderService
     {
@@ -33,7 +35,7 @@
                             cryptoPriceData.Add(
                                 new CryptoPriceRow(
                                     values[1],
-                                    Convert.ToDecimal(values[2]),
+                                    Decimal.Parse(values[2], CultureInfo.InvariantCulture),
                                     dateTimeOffSet.DateTime
                                     )
                                 );
