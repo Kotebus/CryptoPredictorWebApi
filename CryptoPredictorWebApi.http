@@ -1,0 +1,6 @@
+@CryptoPredictorWebApi_HostAddress = http://localhost:5077
+
+GET {{CryptoPredictorWebApi_HostAddress}}/price/min/btc/2025/1/
+Accept: application/json
+
+###
